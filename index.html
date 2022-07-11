@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class doTemperature {
+        doC;
+        constructor(doC) {
+            this.doC = doC;
+        }
+        getDoC(){
+            return this.doC;
+        }
+        setDoC(doC){
+            this.doC = doC ;
+        }
+        doCsangDoF(){
+            return (9*this.doC)/5 +32;
+        }
+        doCsangDoKenvin(){
+            return this.doC + 273.15;
+        }
+    }
+    let a = new doTemperature(25)
+  document.write('do F = ' + a.doCsangDoF() + '<br>')
+document.write('do Kenvin = ' + a.doCsangDoKenvin())
+</script>
+</body>
+</html>
